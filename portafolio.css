@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+header{
+    background-color: aquamarine;
+    grid-area: header;
+}
+menu{
+    background-color: lightcoral;
+}
+section{
+    background-color:lightgray;
+    grid-area: articulo;
+}
+{
+    background-color:blue;
+    grid-area: contenido;
+}
+#sidebar{
+    background-color: lightsalmon;
+    grid-area: sidebar;
+}
+#footer{
+    background-color: lawngreen;
+    grid-area: footer;
+}
+#contenedor{
+    display: grid;
+    width:90%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header" "articulo articulo articulo" "contenido contenido sidebar" "footer footer footer";
+}
